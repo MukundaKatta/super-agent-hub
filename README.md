@@ -1,39 +1,13 @@
 # super-agent-hub
 
-**Marketplace and runtime for composable AI agent skills and capabilities**
+Stub Python project. Described as a hub for AI agents, but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-npm install
-```
+A single class in `src/core.py` (SuperAgentHub) with placeholder methods that each return a fixed dictionary without doing any real work. There is no agent orchestration, no hub functionality, no multi-agent system - just stubs.
 
-## Quick Start
-```typescript
-import { SuperAgentHub } from "./super-agent-hub";
-const instance = new SuperAgentHub()
-const r = await instance.process({ input: 'test' })
-```
+The project uses only Python standard library imports (time, logging, json, typing). No agent framework or orchestration libraries are present.
 
-## CLI
-```bash
-npx tsx src/cli.ts status
-npx tsx src/cli.ts run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `process()` | Process |
-| `analyze()` | Analyze |
-| `transform()` | Transform |
-| `validate()` | Validate |
-| `export()` | Export |
-| `get_stats()` | Get stats |
-
-## Test
-```bash
-npx vitest
-```
-
+Scaffolding only. No working agent hub functionality exists.
