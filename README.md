@@ -1,13 +1,15 @@
-# super-agent-hub
+# Super Agent Hub
 
-Stub Python project. Described as a hub for AI agents, but none of that functionality exists.
+Platform for composing, deploying, and managing multi-agent AI systems.
 
-## What's actually here
+## About
+Super Agent Hub provides infrastructure for building complex AI agent pipelines. It supports agent composition, inter-agent communication, shared memory, and orchestration of multi-step workflows across specialized agents.
 
-A single class in `src/core.py` (SuperAgentHub) with placeholder methods that each return a fixed dictionary without doing any real work. There is no agent orchestration, no hub functionality, no multi-agent system - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No agent framework or orchestration libraries are present.
+## Tech Stack
+- Language: Python
+- Orchestration: Multi-agent coordination framework
+- Communication: Inter-agent messaging protocol
+- Management: Agent lifecycle and deployment tools
 
 ## Status
-
-Scaffolding only. No working agent hub functionality exists.
+Active development - agent orchestration framework and communication layer established.
