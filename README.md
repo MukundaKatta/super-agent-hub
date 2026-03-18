@@ -37,5 +37,3 @@ npx tsx src/cli.ts run --input "data"
 npx vitest
 ```
 
-## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
