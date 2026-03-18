@@ -1,65 +1,41 @@
-# Super Agent Hub
+# super-agent-hub
 
-Marketplace and runtime for composable AI agent skills
+**Marketplace and runtime for composable AI agent skills and capabilities**
 
-## Features
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-- Api.ts
-Auth.ts
-Billing.ts
-Hub.ts
-Index.ts
-Marketplace.ts
-Registry.ts
-Runtime.ts
-Skill-loader.ts
-
-## Tech Stack
-
-- **Language:** TypeScript
-- **Framework:** Next.js
-- **Key Dependencies:** dependencies,^12.0.0,^3.23.0,^4.75.0,devDependencies,^5.7.0,^4.19.0,^2.0.0
-- **Containerization:** Docker + Docker Compose
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- Docker & Docker Compose (optional)
-
-### Installation
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/super-agent-hub.git
-cd super-agent-hub
 npm install
 ```
 
-### Running
+## Quick Start
+```typescript
+import { SuperAgentHub } from "./super-agent-hub";
+const instance = new SuperAgentHub()
+const r = await instance.process({ input: 'test' })
+```
 
+## CLI
 ```bash
-npm run dev
+npx tsx src/cli.ts status
+npx tsx src/cli.ts run --input "data"
 ```
 
-### Docker
+## API
+| Method | Description |
+|--------|-------------|
+| `process()` | Process |
+| `analyze()` | Analyze |
+| `transform()` | Transform |
+| `validate()` | Validate |
+| `export()` | Export |
+| `get_stats()` | Get stats |
 
+## Test
 ```bash
-docker-compose up
-```
-
-## Project Structure
-
-```
-super-agent-hub/
-├── src/           # Source code
-├── tests/         # Test suite
-├── Dockerfile
-├── docker-compose.yml
-├── package.json
-└── README.md
+npx vitest
 ```
 
 ## License
-
-MIT
+(c) 2026 Officethree Technologies. All Rights Reserved.
